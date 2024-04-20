@@ -23,7 +23,6 @@ def openWppDektop():
     keyboard_controller.release(keyboard_key.cmd)
     time.sleep(1)
 
-
 class contatoWpp():
     def __init__(self, dadosContato):
         self.nome = dadosContato.NOME
@@ -74,22 +73,22 @@ class contatoWpp():
         time.sleep(2)
 
     def eventClickFile(self):
-        botao_arquivo_desktop = pyautogui.locateCenterOnScreen('./imgSearch/botao_arquivo_desktop.png')
+        botao_arquivo_desktop = pyautogui.locateCenterOnScreen('./img/botao_arquivo_desktop.png')
         pyautogui.click(botao_arquivo_desktop[0], botao_arquivo_desktop[1], interval=1)
 
         if self.flag_img:
-            botao_imagem_desktop = pyautogui.locateCenterOnScreen('./imgSearch/botao_imagem_desktop.png')
+            botao_imagem_desktop = pyautogui.locateCenterOnScreen('./img/botao_imagem_desktop.png')
             pyautogui.click(botao_imagem_desktop[0], botao_imagem_desktop[1], interval=1)
             mouse_controller.click(button=mouse_button.left)
             time.sleep(1)
         else:
-            botao_imagem_desktop = pyautogui.locateCenterOnScreen('./imgSearch/botao_documento_desktop.png')
+            botao_imagem_desktop = pyautogui.locateCenterOnScreen('./img/botao_documento_desktop.png')
             pyautogui.click(botao_imagem_desktop[0], botao_imagem_desktop[1], interval=1)
             mouse_controller.click(button=mouse_button.left)
             time.sleep(1)
 
     def eventSendMsg(self):
-        botao_mensagem_desktop = pyautogui.locateCenterOnScreen('./imgSearch/botao_arquivo_desktop.png')
+        botao_mensagem_desktop = pyautogui.locateCenterOnScreen('./img/botao_arquivo_desktop.png')
         calc = (botao_mensagem_desktop[0]*20)/100
         pyautogui.click((botao_mensagem_desktop[0]+calc), botao_mensagem_desktop[1], interval=1)
 

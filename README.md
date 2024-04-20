@@ -12,3 +12,20 @@ userName = ''
 password = ''
 driveConnection = ''
 schema = ''
+
+## Estrutura do Projeto
+```
+projeto/
+└── img/
+    ├── botao_arquivo_desktop.png
+    ├── botao_documento_desktop.png
+    ├── botao_imagem_desktop.png
+    ├── botao_imagem_web.png
+    ├── botao_mensagem_desktop.png
+    └── botao_pesquisa_desktop.png
+└── sql/
+    ├── scriptmodel.sql/
+└── functions.py
+└── scripts.py
+└── sendinfos.py
+```
