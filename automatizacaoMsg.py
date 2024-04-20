@@ -2,6 +2,7 @@ import scripts
 import functions
 
 if __name__ == '__main__':
+    # __ main do projeto __
     functions.openWppDektop()
     
     dba = functions.dataBase()
