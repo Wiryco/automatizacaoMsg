@@ -12,7 +12,7 @@ projeto/
     ├── botao_mensagem_desktop.png
     └── botao_pesquisa_desktop.png
 └── sql/
-    ├── scriptmodel.sql/
+    ├── sqlmodel.sql/
 └── functions.py
 └── scripts.py
 └── sendinfos.py
