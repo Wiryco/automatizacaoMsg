@@ -1,3 +1,10 @@
+CREATE DATABASE AUTOMATIZACAO;
+
+USE AUTOMATIZACAO
+GO
+
+CREATE SCHEMA automatizacao
+
 CREATE TABLE automatizacao.TIPO_ENVIO_WPP (
 	ID_TIPO_ENVIO BIGINT IDENTITY(1,1) PRIMARY KEY,
 	DESCRICAO_TIPO_ENVIO NVARCHAR(250)
@@ -38,6 +45,9 @@ CREATE TABLE automatizacao.CONTATOS_WPP (
 INSERT INTO automatizacao.CONTATOS_WPP (NOME, TELEFONE, ATIVO)
 VALUES ('Nome do contato', 00000000000, 1)
 
+INSERT INTO automatizacao.CONTATOS_WPP (NOME, TELEFONE, ATIVO)
+VALUES ('Nome do contato2', 00000000000, 1)
+
 --SELECT * FROM automatizacao.CONTATOS_WPP
 
 CREATE TABLE automatizacao.CONTROLE_ENVIO_WPP (
@@ -52,16 +62,16 @@ INSERT INTO automatizacao.CONTROLE_ENVIO_WPP (ID_CONTATO, ID_TIPO_ENVIO, ID_MENS
 VALUES (1, 1, 1, NULL)
 
 INSERT INTO automatizacao.CONTROLE_ENVIO_WPP (ID_CONTATO, ID_TIPO_ENVIO, ID_MENSAGEM, CAMINHO_ARQUIVO)
-VALUES (2, 2, 0, 'D:\testeRpaWpp\J. K. Rowling - Harry Potter 1 - Sorcerers Stone.txt')
+VALUES (2, 2, 0, 'C:\testeSend\J. K. Rowling - Harry Potter 1 - Sorcerers Stone.txt')
 
 INSERT INTO automatizacao.CONTROLE_ENVIO_WPP (ID_CONTATO, ID_TIPO_ENVIO, ID_MENSAGEM, CAMINHO_ARQUIVO)
-VALUES (2, 2, 0, 'D:\testeRpaWpp\Teste RPA.docx')
+VALUES (2, 2, 0, 'C:\testeSend\Teste RPA.docx')
 
 INSERT INTO automatizacao.CONTROLE_ENVIO_WPP (ID_CONTATO, ID_TIPO_ENVIO, ID_MENSAGEM, CAMINHO_ARQUIVO)
-VALUES (2, 2, 0, 'D:\testeRpaWpp\Teste RPA.pdf')
+VALUES (2, 2, 0, 'C:\testeSend\Teste RPA.pdf')
 
 INSERT INTO automatizacao.CONTROLE_ENVIO_WPP (ID_CONTATO, ID_TIPO_ENVIO, ID_MENSAGEM, CAMINHO_ARQUIVO)
-VALUES (1, 3, 1, 'D:\testeRpaWpp\harrypotter_2.jpeg')
+VALUES (1, 3, 1, 'C:\testeSend\harrypotter_2.jpeg')
 
 --SELECT * FROM automatizacao.CONTROLE_ENVIO_WPP
 
